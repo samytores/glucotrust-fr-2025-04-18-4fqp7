@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +15,14 @@
     <meta name="description" content="GlucoTrust FR - Le TOP Supplément Régulateur de Glycémie. Découvrez notre solution naturelle pour maintenir une glycémie équilibrée.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Announcement Bar -->
@@ -18,20 +34,30 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="#" class="text-2xl font-bold text-gray-800">GlucoTrust FR</a>
+                <a href="https://samytores.github.io/glucotrust-fr-2025-04-18-4fqp7" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors">GlucoTrust FR</a>
             </div>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Caractéristiques</a>
-                <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors">Avantages</a>
-                <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
-                <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105">
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Caractéristiques</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors">Avantages</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors">Témoignages</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">À propos</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors">FAQ</a>
+                <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
                     Acheter maintenant
                 </a>
             </div>
-            <button class="md:hidden text-gray-600">
+            <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Menu mobile">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg absolute w-full">
+            <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600">Caractéristiques</a>
+            <a href="#benefits" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600">Avantages</a>
+            <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600">Témoignages</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600">À propos</a>
+            <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600">FAQ</a>
+            <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" class="block px-4 py-2 text-white bg-blue-600 hover:bg-blue-700">Acheter maintenant</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -43,7 +69,8 @@
         <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">GlucoTrust FR</h1>
             <p class="text-xl md:text-2xl mb-8">Le TOP Supplément Régulateur de Glycémie</p>
-            <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+            <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" 
+               class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Découvrir maintenant
             </a>
         </div>
@@ -54,14 +81,27 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Caractéristiques Principales</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-102 cursor-pointer">
                     <div class="text-blue-600 mb-4">
-                        <i class="fas fa-check-circle text-3xl"></i>
+                        <i class="fas fa-leaf text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Régulation Naturelle</h3>
-                    <p class="text-gray-600">Formule 100% naturelle pour réguler votre glycémie efficacement</p>
+                    <h3 class="text-xl font-semibold mb-4">Formule 100% Naturelle</h3>
+                    <p class="text-gray-600">Composée d'ingrédients biologiques soigneusement sélectionnés pour leur efficacité</p>
                 </div>
-                <!-- Additional feature cards... -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-102 cursor-pointer">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Protection Optimale</h3>
+                    <p class="text-gray-600">Soutient activement l'équilibre glycémique et renforce le système immunitaire</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-102 cursor-pointer">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-clock text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Action Durable</h3>
+                    <p class="text-gray-600">Effets progressifs et durables pour un contrôle glycémique optimal</p>
+                </div>
             </div>
         </div>
     </section>
@@ -69,20 +109,120 @@
     <!-- Benefits Section -->
     <section id="benefits" class="py-24">
         <!-- Benefit 1 -->
-        <div class="flex flex-col md:flex-row items-center mb-24">
+        <div class="flex flex-col md:flex-row items-center mb-24 bg-white">
             <div class="md:w-1/2 p-8">
-                <h2 class="text-3xl font-bold mb-6">Régulation Optimale</h2>
-                <p class="text-gray-600 mb-6">Glucotrust FR : Le TOP Supplément Régulateur de Glycémie qui aide à maintenir des niveaux de sucre sains</p>
-                <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105">
+                <h2 class="text-3xl font-bold mb-6">Régulation Glycémique Naturelle</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    GlucoTrust FR utilise une formule exclusive composée d'ingrédients naturels scientifiquement prouvés pour maintenir des niveaux de sucre sains. Notre supplément aide à optimiser le métabolisme du glucose et soutient une production d'insuline équilibrée, vous permettant de retrouver une stabilité glycémique naturelle.
+                </p>
+                <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" 
+                   class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
                     En savoir plus
                 </a>
             </div>
             <div class="md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Benefit 1" class="rounded-lg shadow-xl">
+                <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" 
+                     alt="Régulation Glycémique Naturelle" 
+                     class="rounded-lg shadow-xl hover:shadow-2xl transition-all">
             </div>
         </div>
 
-        <!-- Additional benefits... -->
+        <!-- Benefit 2 -->
+        <div class="flex flex-col md:flex-row-reverse items-center mb-24 bg-gray-50">
+            <div class="md:w-1/2 p-8">
+                <h2 class="text-3xl font-bold mb-6">Amélioration du Métabolisme</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Notre formule unique stimule le métabolisme naturel de votre corps, favorisant une meilleure absorption des nutriments et une gestion optimale du glucose. Grâce à des composants bioactifs soigneusement sélectionnés, GlucoTrust FR aide à maintenir un équilibre métabolique sain tout au long de la journée.
+                </p>
+                <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" 
+                   class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                    Découvrir les bienfaits
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?w=800&h=600&fit=crop&q=80" 
+                     alt="Amélioration du Métabolisme" 
+                     class="rounded-lg shadow-xl hover:shadow-2xl transition-all">
+            </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="flex flex-col md:flex-row items-center bg-white">
+            <div class="md:w-1/2 p-8">
+                <h2 class="text-3xl font-bold mb-6">Bien-être Global</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Au-delà de la régulation glycémique, GlucoTrust FR contribue à votre bien-être général. Notre supplément aide à réduire les fringales, améliore la qualité du sommeil et soutient un mode de vie sain et équilibré. Profitez d'une énergie stable et d'une vitalité retrouvée au quotidien.
+                </p>
+                <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" 
+                   class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                    Commencer maintenant
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop&q=80" 
+                     alt="Bien-être Global" 
+                     class="rounded-lg shadow-xl hover:shadow-2xl transition-all">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">À Propos de GlucoTrust FR</h2>
+            <div class="space-y-8">
+                <p class="text-gray-600 leading-relaxed">
+                    Fondée en 2018 par une équipe de chercheurs passionnés par la santé naturelle, GlucoTrust FR est née de la volonté de proposer une solution efficace et naturelle pour la régulation glycémique. Notre engagement pour l'innovation et la qualité nous a permis de développer une formule unique, basée sur des années de recherche et d'expertise dans le domaine de la nutrition.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Notre mission est d'aider les personnes à maintenir une glycémie équilibrée naturellement, tout en promouvant un mode de vie sain. Nos valeurs fondamentales reposent sur la transparence, l'efficacité et la satisfaction client. Chaque lot de GlucoTrust FR est soumis à des contrôles qualité rigoureux pour garantir son efficacité et sa sécurité.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Ce que disent nos clients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Après 2 mois d'utilisation, ma glycémie s'est stabilisée. Je me sens plus énergique et mes fringales ont diminué."</p>
+                    <p class="font-semibold">Marie D.</p>
+                    <p class="text-sm text-gray-500">Utilisatrice depuis 3 mois</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Excellent produit ! Les résultats sont visibles dès les premières semaines. Le service client est également très réactif."</p>
+                    <p class="font-semibold">Pierre M.</p>
+                    <p class="text-sm text-gray-500">Chef d'entreprise</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Je recommande vivement GlucoTrust FR. C'est le seul supplément qui m'a vraiment aidé à maintenir ma glycémie stable."</p>
+                    <p class="font-semibold">Sophie L.</p>
+                    <p class="text-sm text-gray-500">Nutritionniste</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Un produit naturel et efficace qui m'a permis de retrouver un équilibre. Je me sens beaucoup mieux au quotidien."</p>
+                    <p class="font-semibold">Jean F.</p>
+                    <p class="text-sm text-gray-500">Retraité actif</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FAQ Section -->
@@ -90,16 +230,41 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Questions Fréquentes</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <!-- FAQ items... -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold mb-4">Comment fonctionne GlucoTrust FR ?</h3>
+                    <p class="text-gray-600">GlucoTrust FR utilise une formule naturelle qui aide à réguler la glycémie en optimisant le métabolisme du glucose et en soutenant la production d'insuline. Les ingrédients actifs travaillent en synergie pour maintenir des niveaux de sucre équilibrés.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold mb-4">Combien de temps faut-il pour voir des résultats ?</h3>
+                    <p class="text-gray-600">Les premiers résultats peuvent être observés après 2-3 semaines d'utilisation régulière. Pour des résultats optimaux, nous recommandons une utilisation continue pendant au moins 3 mois.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold mb-4">Y a-t-il des effets secondaires ?</h3>
+                    <p class="text-gray-600">GlucoTrust FR est composé d'ingrédients naturels et ne présente généralement pas d'effets secondaires. Cependant, nous recommandons toujours de consulter votre médecin avant de commencer tout nouveau supplément.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold mb-4">Quelle est la posologie recommandée ?</h3>
+                    <p class="text-gray-600">La dose recommandée est d'une gélule par jour, à prendre avec un verre d'eau avant le premier repas. Pour de meilleurs résultats, maintenez une utilisation régulière et suivez un mode de vie sain.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
+    <section class="py-24 bg-blue-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&h=900&fit=crop&q=80" 
+                 alt="Background CTA" 
+                 class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Prêt à optimiser votre glycémie ?</h2>
-            <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Rejoignez des milliers de personnes satisfaites qui ont déjà fait confiance à GlucoTrust FR</p>
+            <a href="https://glucotrustfr.co/decouverte/#aff=MichaelMica&cam=GithuB" 
+               class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Commander maintenant
             </a>
         </div>
@@ -115,23 +280,25 @@
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p class="text-gray-400">Email: vv@gluco.fr</p>
+                    <p class="text-gray-400">Email: contact@glucotrustfr.co</p>
+                    <p class="text-gray-400">Tél: +33 1 23 45 67 89</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Liens Utiles</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">À propos</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Conditions d'utilisation</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">À propos</a></li>
+                        <li><a href="https://samytores.github.io/glucotrust-fr-2025-04-18-4fqp7/blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="https://samytores.github.io/glucotrust-fr-2025-04-18-4fqp7/privacy.html" class="hover:text-white transition-colors">Politique de confidentialité</a></li>
+                        <li><a href="https://samytores.github.io/glucotrust-fr-2025-04-18-4fqp7/terms.html" class="hover:text-white transition-colors">Conditions d'utilisation</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Suivez-nous</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -140,5 +307,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
